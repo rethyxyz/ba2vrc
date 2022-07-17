@@ -1,5 +1,5 @@
 #!/bin/bash
-# Note: Don't forget to clear the ~/.vim/aliases file before running so you
+# Note-to-self: Don't forget to clear the ~/.vim/aliases file before running so you
 # don't get outdated binds.
 
 grep "vim\ " ~/.bash_aliases \
