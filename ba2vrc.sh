@@ -12,7 +12,8 @@ grep "vim\ " ~/.bash_aliases \
 grep "cd\ " ~/.bash_aliases \
 	| sed \
 		-e 's/alias\ /map <leader>/g' \
-		-e 's/=/\ :e\ /g' -e 's/\"cd\ //g' \
+		-e 's/=/\ :e\ /g' \
+		-e 's/\"cd\ //g' \
 		-e 's/\"/<CR>/g' >> ~/.vim/aliases
 
 if [[ $(grep "source ~/.vim/aliases" ~/.vimrc) ]]; then
